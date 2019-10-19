@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/currentWeatherFragment">
+
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.nikede.forecast.ui.weather.current.CurrentWeatherFragment"
+        android:label="Current"
+        tools:layout="@layout/current_weather_fragment" />
+    <fragment
+        android:id="@+id/futureListWeatherFragment"
+        android:name="com.nikede.forecast.ui.weather.future.list.FutureListWeatherFragment"
+        android:label="Futurte"
+        tools:layout="@layout/future_list_weather_fragment" />
+    <fragment
+        android:id="@+id/futureDetailWeatherFragment"
+        android:name="com.nikede.forecast.ui.weather.future.detail.FutureDetailWeatherFragment"
+        android:label="Detail"
+        tools:layout="@layout/future_detail_weather_fragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.nikede.forecast.ui.settings.SettingsFragment"
+        android:label="Settings" />
+</navigation>

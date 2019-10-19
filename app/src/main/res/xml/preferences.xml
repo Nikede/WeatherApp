@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/weather_location">
+        <SwitchPreference
+            android:key="USE_DEVICE_LOCATION"
+            android:title="@string/use_device_location"
+            android:summary="@string/allow_your_app_to_get_your_location"
+            android:defaultValue="true"
+            android:disableDependentsState="true"/>
+
+        <EditTextPreference
+            android:key="CUSTOM_LOCATION"
+            android:title="@string/location"
+            android:summary="@string/the_location_for_which_the_weather_is_displayed"
+            android:defaultValue="Moscow"
+            android:dependency="USE_DEVICE_LOCATION"/>
+    </PreferenceCategory>
+</PreferenceScreen>
